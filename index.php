@@ -25,7 +25,6 @@ include_once $project_path . 'common/head.php';
         <?php include_once $project_path . 'common/sections/faq.php'; ?>
         <?php include_once $project_path . 'common/sections/final-cta.php'; ?>
       </main>
-
         <?php
       include_once $project_path . 'common/footer.php';
         ?>
