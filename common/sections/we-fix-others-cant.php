@@ -13,7 +13,7 @@
                                     <small class="mb-0 fw-light">Updated October 20, 2025, 2:15 PM EST</small>
                               </div>
                         </div>
-                        <a href="#" class="btn btn-primary w-100" data-aos="fade-up" data-aos-delay="100">Get Free Quote</a>
+                        <a href="#" class="btn btn-primary w-100">Get Free Quote</a>
                   </div>
                   <div class="col-lg-4">
                         <div class="imgBox" data-aos="fade-left" data-aos-delay="60">
