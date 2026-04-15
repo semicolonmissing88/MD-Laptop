@@ -1,0 +1,77 @@
+// Typography
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  margin: 0 0 20px;
+line-height: 1.2;
+  font-weight: 600;
+  span{
+      color: $primary-color;
+  }
+}
+
+h1, .h1 {
+  font-size: 54px;
+
+}
+
+h2, .h2 {
+  font-size: 42px;
+
+
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+
+  @include media ("<579px"){
+    font-size: 20px;
+  }
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+
+  @include media ("<tablet"){
+    font-size: 20px;
+  }
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+
+.text-muted{
+      color: #99A1AF;
+}
+
+.line-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    min-width: 12px;
+    height: 2px;
+    background-color: $primary-color;
+  }
+}

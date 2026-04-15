@@ -1,0 +1,274 @@
+ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+
+.list-styled {
+      li {
+            position: relative;
+            padding-left: 18px;
+
+            &::before {
+                  content: '';
+                  display: inline-block;
+                  width: 6px;
+                  height: 6px;
+                  background-color: #fff;
+                  border-radius: 50%;
+                  position: absolute;
+                  left: 0;
+                  top: 10px;
+            }
+      }
+
+      &.red {
+            li {
+                  &::before {
+                        background-color: $primary-color;
+                  }
+
+                  h6 {
+                        text-decoration: underline;
+                        margin-bottom: 12px;
+                  }
+
+                  p {
+                        transform: translateX(-18px);
+                  }
+            }
+      }
+}
+
+.list {
+      li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 8px;
+
+            &::before {
+                  content: '';
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  background: url('../images/icons/check.svg') no-repeat center center;
+                  background-size: contain;
+
+                  position: absolute;
+                  left: 0;
+                  top: 3px;
+            }
+      }
+}
+
+a {
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:focus {
+            text-decoration: none;
+            color: $primary-color;
+      }
+}
+
+.container {
+      @include media('<=widescreen-large') {
+            max-width: 100%;
+            padding: 0 80px;
+      }
+}
+
+.rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 14px;
+
+}
+
+.imgBox {
+      width: 100%;
+      position: relative;
+
+      img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+      }
+
+      .slide-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            background: rgba(0, 0, 0, 0.62);
+            padding: 12px;
+            backdrop-filter: blur(4px);
+            overflow: auto;
+            transition: all 0.3s ease-in-out;
+
+            small {
+                  opacity: 0;
+                  height: 0;
+                  display: block;
+            }
+
+      }
+
+      &:hover {
+            .slide-text {
+                  height: 90%;
+
+                  small {
+                        opacity: 1;
+                        height: auto;
+                  }
+            }
+      }
+}
+
+.services {
+      .box {
+            min-height: 100%;
+      }
+}
+
+.services-warranty {
+      $gutter: 12px;
+
+      .js-services-warranty-slider,
+      .js-services-team-slider {
+            margin-inline: -$gutter;
+      }
+
+      .services-warranty-slide {
+            padding-inline: $gutter;
+      }
+
+      .slick-track {
+            display: flex;
+            align-items: stretch;
+      }
+
+      .slick-slide {
+            height: auto;
+
+            >div,
+            .box {
+                  min-height: 100%;
+            }
+
+            >div {
+                  height: 100%;
+            }
+      }
+
+      .services-warranty-nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 8px;
+
+            .slick-arrow {
+                  position: static;
+                  transform: none;
+            }
+
+            .slick-prev:before,
+            .slick-next:before {
+                  display: none;
+            }
+      }
+
+      .services-warranty-dots {
+            margin-top: 16px;
+
+            .slick-dots {
+                  position: static;
+                  bottom: auto;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin: 0;
+                  padding: 0;
+                  list-style: none;
+            }
+
+            li {
+                  margin: 0;
+                  width: auto;
+                  height: auto;
+            }
+
+            button {
+                  width: 9px;
+                  height: 9px;
+                  padding: 0;
+                  border: none;
+                  border-radius: 50%;
+                  background: #fff;
+                  font-size: 0;
+                  line-height: 0;
+                  cursor: pointer;
+                  transition: background 0.2s ease, transform 0.2s ease;
+            }
+
+            .slick-active button {
+                  background: $primary-color;
+                  transform: scale(1.15);
+            }
+      }
+}
+
+.services-warranty-arrow {
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: none;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 1;
+      color: #fff;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+            opacity: 0.92;
+      }
+
+      &--prev {
+            background: #3f3f46;
+      }
+
+      &--next {
+            background: $primary-color;
+      }
+}
+
+.link-heading {
+      a {
+            color: $primary-color;
+      }
+
+      small {
+            font-size: 16px;
+            color: #fff;
+            margin-left: 8px;
+            font-weight: 400;
+      }
+}
+
+.text-red {
+      color: #DC2626 !important;
+}
+
+.text-light {
+      color: #D1D5DC !important;
+}

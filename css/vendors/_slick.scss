@@ -1,0 +1,189 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0 !important;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: stretch;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: flex !important;
+  height: unset !important;
+  padding: 15px;
+
+  >div{
+    width: 100%;
+  }
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 1;
+
+  &.slick-current {
+    .testimonial-bx {
+      background: #fff;
+    }
+  }
+}
+.slick-next,
+.slick-prev {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  line-height: 38px;
+  left: -40px;
+  margin: -20px 0 0;
+  top: 50%;
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 0 !important;
+  border: none;
+  transition: all ease 0.3s;
+  z-index: 2;
+
+  @include media("<widescreen") {
+    left: -20px;
+  }
+
+  &:hover {
+    color: #2f9880;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.slick-next {
+  left: auto;
+  right: -40px;
+
+  @include media("<widescreen") {
+    right: -20px;
+  }
+}
+
+.slick-dots {
+  text-align: center;
+  margin-top: 18px;
+
+
+  li {
+    display: inline-block;
+    padding: 5px !important;
+    width: auto !important;
+
+    button {
+      font-size: 0;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      padding: 0;
+      background-color: #c5c6c8;
+      
+    }
+    &.slick-active{
+        button{
+            background-color: #1d8cedFF;
+        }
+    }
+  }
+}
