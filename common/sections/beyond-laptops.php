@@ -91,7 +91,7 @@
             </div>
             <div class="box red-box bg-red" data-aos="fade-up">
                   <div class="heading align-items-start mb-0">
-                        <img class="mt-2" src="/images/icons/data.svg" alt="icon">
+                        <img class="mt-2" src="images/icons/data.svg" alt="icon">
                         <div>
                               <h3 class=mb-0>Data Recovery</h3>
                               <p class="mb-1">Lost files? We can save your <b>critical data fast.</b></p>
