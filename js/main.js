@@ -71,7 +71,6 @@
 
     update();
   }
-
   // Save scroll for unload + bfcache navigations.
   window.addEventListener('pagehide', persistScroll, { passive: true });
   window.addEventListener('beforeunload', persistScroll);
