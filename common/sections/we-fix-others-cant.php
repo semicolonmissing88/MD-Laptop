@@ -1,4 +1,4 @@
-<section class="section bg">
+<section class="section bg d-lg-block d-none">
       <div class="container">
             <div class="row align-items-stretch">
                   <div class="col-lg-8 d-flex flex-column justify-content-between">
@@ -21,5 +21,27 @@
                         </div>
                   </div>
             </div>
+      </div>
+</section>
+
+<section class="section d-lg-none d-block pb-0">
+      <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">See How We Fix Your Laptop</h2>
+            <div class="imgBox mb-4" data-aos="fade-right">
+                  <img src="images/dummy.png" alt="laptop">
+            </div>
+            <h2 data-aos="flip-soft">No Fees. <span>Free</span> Estimate. While you Wait.</h2>
+            <p data-aos="fade-up" data-aos-delay="40">You only pay when we fix it. Walk in anytime — no appointment needed.</p>
+            <div class="box rounded-2 p-4" data-aos="fade-up" data-aos-delay="60">
+                  <h6 class="fw-medium"><span>COMPONENT-LEVEL REPAIR</span></h6>
+                  <h2>We Fix What Others Can’t</h2>
+                  <ul class="list res-list" data-aos="fade-up" data-aos-delay="80" data-aos-stagger="60">
+                        <li>Board-level micro soldering & component replacement — saves you from buying a new motherboard</li>
+                        <li>90% board repair success rate — we repair what big service centers call "dead"</li>
+                        <li>Keep using your device while parts are in transit — we lend you peripherals </li>
+                        <li class="mb-0">20–30 devices repaired daily — most done same day or overnight</li>
+                  </ul>
+            </div>
+
       </div>
 </section>

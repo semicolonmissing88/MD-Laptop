@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section d-lg-block d-none">
       <div class="container">
             <div class="row align-items-center justify-content-between">
                   <div class="col-lg-4">

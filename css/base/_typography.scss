@@ -16,12 +16,12 @@ line-height: 1.2;
 }
 
 h1, .h1 {
-  font-size: 54px;
+  font-size: clamp(24px, 9.5vw, 54px);
 
 }
 
 h2, .h2 {
-  font-size: 42px;
+  font-size: clamp(24px, 6.1vw, 42px);
 
 
 }
@@ -35,7 +35,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: $h4-font-size;
+  font-size: clamp(16px, 5vw, 20px);
 
   @include media ("<tablet"){
     font-size: 20px;
@@ -43,7 +43,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: $h5-font-size;
+  font-size: clamp(14px, 4vw, 16px);
 }
 
 h6, .h6 {
@@ -56,7 +56,10 @@ p {
 
 
 .text-muted{
-      color: #99A1AF;
+      color: #99A1AF !important;
+      @include media("<tablet-x") {
+            color: #A0A0A0 !important;
+      }
 }
 
 .line-heading {

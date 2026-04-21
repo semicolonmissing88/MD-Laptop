@@ -1,4 +1,4 @@
-<section class="section bg-img" style="background-image: url(images/bg1.png);">
+<section class="section bg-img d-lg-block d-none" style="background-image: url(images/bg1.png);">
       <div class="container">
             <div class="row">
                   <div class="col-lg-6">

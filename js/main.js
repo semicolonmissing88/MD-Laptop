@@ -71,6 +71,39 @@
 
     update();
   }
+
+  function initNavToggle() {
+    var btn = document.querySelector('.js-nav-toggle');
+    var nav = document.getElementById('nav');
+    if (!btn || !nav) return;
+
+    function setOpen(open) {
+      document.body.classList.toggle('nav-open', !!open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+
+    btn.addEventListener('click', function () {
+      setOpen(!document.body.classList.contains('nav-open'));
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setOpen(false);
+    });
+
+    nav.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a') : null;
+      if (a) setOpen(false);
+    });
+
+    var mq = window.matchMedia('(min-width: 992px)');
+    function onChange() {
+      if (mq.matches) setOpen(false);
+    }
+    if (mq.addEventListener) mq.addEventListener('change', onChange);
+    else mq.addListener(onChange);
+    onChange();
+  }
   // Save scroll for unload + bfcache navigations.
   window.addEventListener('pagehide', persistScroll, { passive: true });
   window.addEventListener('beforeunload', persistScroll);
@@ -80,10 +113,12 @@
     document.addEventListener('DOMContentLoaded', function () {
       restoreScroll();
       initScrollTop();
+      initNavToggle();
     });
   } else {
     restoreScroll();
     initScrollTop();
+    initNavToggle();
   }
 
   window.addEventListener('load', hideLoaderSoon, { once: true });
@@ -92,6 +127,36 @@
 $(function () {
   // Slick + FAQ: init only when matching elements exist.
   var idle = { pauseOnFocus: false, pauseOnHover: false, pauseOnDotsHover: false };
+
+  function initBannerSponsors() {
+    var $s = $('.js-banner-sponsors');
+    if (!$s.length) return;
+
+    function apply() {
+      var isMobile = window.matchMedia('(max-width: 768px)').matches;
+      if (isMobile) {
+        if ($s.hasClass('slick-initialized')) return;
+        $s.slick(
+          $.extend({}, idle, {
+            arrows: false,
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2200,
+            speed: 350,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+          })
+        );
+      } else if ($s.hasClass('slick-initialized')) {
+        $s.slick('unslick');
+      }
+    }
+
+    apply();
+    $(window).on('resize orientationchange', apply);
+  }
 
   function warrantyArrow(dir, icon, label) {
     return (
@@ -138,36 +203,51 @@ $(function () {
     );
   }
 
+  initBannerSponsors();
+
   var $warranty = $('.js-services-warranty-slider');
   if ($warranty.length) {
     // Warranty carousel with custom arrows.
-    $warranty.slick(
-      $.extend({}, idle, warrantyCarousel, {
-        arrows: true,
-        dots: false,
-        appendArrows: $warranty.closest('.services-warranty').find('.services-warranty-nav'),
-        prevArrow: warrantyArrow('prev', 'left', 'Previous slide'),
-        nextArrow: warrantyArrow('next', 'right', 'Next slide'),
-      })
-    );
+    $warranty.each(function () {
+      var $slider = $(this);
+      $slider.slick(
+        $.extend({}, idle, warrantyCarousel, {
+          arrows: true,
+          dots: false,
+          appendArrows: $slider.closest('.services-warranty').find('.services-warranty-nav').first(),
+          prevArrow: warrantyArrow('prev', 'left', 'Previous slide'),
+          nextArrow: warrantyArrow('next', 'right', 'Next slide'),
+        })
+      );
+    });
   }
 
   var $team = $('.js-services-team-slider');
   if ($team.length) {
     // Team carousel uses dots (no arrows).
-    $team.slick(
-      $.extend({}, idle, warrantyCarousel, {
-        slidesToShow: 4,
-        responsive: [
-          { breakpoint: 1200, settings: { slidesToShow: 3 } },
-          { breakpoint: 992, settings: { slidesToShow: 2 } },
-          { breakpoint: 576, settings: { slidesToShow: 1 } },
-        ],
-        arrows: false,
-        dots: true,
-        appendDots: $team.closest('.services-warranty').find('.services-warranty-dots'),
-      })
-    );
+    $team.each(function () {
+      var $slider = $(this);
+      $slider.slick(
+        $.extend({}, idle, warrantyCarousel, {
+          slidesToShow: 4,
+          responsive: [
+            { breakpoint: 1200, settings: { slidesToShow: 3 } },
+            { breakpoint: 992, settings: { slidesToShow: 2 } },
+            {
+              breakpoint: 768,
+              settings: { slidesToShow: 1, centerMode: true, centerPadding: '56px' },
+            },
+            {
+              breakpoint: 576,
+              settings: { slidesToShow: 1, centerMode: true, centerPadding: '28px' },
+            },
+          ],
+          arrows: false,
+          dots: true,
+          appendDots: $slider.closest('.services-warranty').find('.services-warranty-dots').first(),
+        })
+      );
+    });
   }
 
   var $faq = $('.js-faq-accordion');

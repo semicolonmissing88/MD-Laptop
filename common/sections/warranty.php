@@ -1,4 +1,4 @@
-<section class="section bg">
+<section class="section bg d-lg-block d-none">
       <div class="container">
             <div class="text-center mb-5">
                   <h2 data-aos="fade-up">Warranty Protection & <span>Support</span></h2>
@@ -41,6 +41,42 @@
                                     <p class="text-red mb-0"><b>$89—$149+</b></p>
                               </div>
                         </div>
+                  </div>
+                  <div class="services-warranty-nav" aria-label="Warranty services carousel"></div>
+            </div>
+
+      </div>
+</section>
+
+<section class="section d-lg-none d-block pb-0">
+      <div class="container">
+            <h6 class="fw-medium mb-0 text-uppercase" data-aos="fade-up"><span>Common Issues</span></h6>
+            <h2 class="mb-1" data-aos="fade-up" data-aos-delay="40">Don’t let these slow you down</h2>
+            <p class="text-muted mb-0" data-aos="fade-up" data-aos-delay="60">Get fast, reliable repair today</p>
+            <div class="services services-warranty" data-aos="fade-up" data-aos-delay="80">
+                  <div class="js-services-warranty-slider">
+                        <div class="services-warranty-slide">
+                              <div class="box border-box">
+                                    <img class="mb-2" src="images/icons/w1.svg" alt="icon">
+                                    <h6 class="mb-2">Screen Repair</h6>
+                                    <p class="mb-0 text-muted">Cracked or dead pixels</p>
+                              </div>
+                        </div>
+                        <div class="services-warranty-slide">
+                              <div class="box border-box">
+                                    <img class="mb-2" src="images/icons/w2.svg" alt="icon">
+                                    <h6 class="mb-2">Battery</h6>
+                                    <p class="mb-0 text-muted">Won't hold charge</p>
+                              </div>
+                        </div>
+                        <div class="services-warranty-slide">
+                              <div class="box border-box">
+                                    <img class="mb-2" src="images/icons/w3.svg" alt="icon">
+                                    <h6 class="mb-2">Keyboard</h6>
+                                    <p class="mb-0 text-muted">Stuck or missing keys</p>
+                              </div>
+                        </div>
+                  
                   </div>
                   <div class="services-warranty-nav" aria-label="Warranty services carousel"></div>
             </div>

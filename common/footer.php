@@ -6,7 +6,7 @@
                   </a>
                   <div class="right-side">
                         <a href="#" class=" text-decoration-underline">Request a Service</a>
-                        <a href="" class="btn btn-primary icon"><img src="images/icons/phone.svg" alt="icon"> 973-553-0794</a>
+                        <a href="" class="btn btn-primary icon"><img src="images/icons/phone.svg" alt="icon"> <span>973-553-0794</span></a>
                   </div>
             </div>
             <ul class="footer-link">

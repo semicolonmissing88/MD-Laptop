@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section d-lg-block d-none">
       <div class="container">
             <div class="text-center mb-5">
                   <h2 data-aos="fade-up">Fast, Professional Laptop <span>Repair in NJ</span></h2>
@@ -86,3 +86,4 @@
             </div>
       </div>
 </section>
+

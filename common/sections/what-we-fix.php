@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section d-lg-block d-none">
       <div class="container">
             <h2 class="text-center mb-4" data-aos="fade-up">What can <span>We Fix For You?</span></h2>
             <div class="row text-center" data-aos-stagger="90">

@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section d-lg-block d-none">
       <div class="container text-center">
             <h2 data-aos="fade-up">Component-Level Repair Instead of Costly Replacement</h2>
             <p data-aos="fade-up" data-aos-delay="40">Others charge astronomical prices to replace parts and take weeks—we take hours. We specialize in micro-soldering and component-level repairs. Instead of replacing the motherboard, we repair it at the component level. This keeps costs affordable and you don't worry about reinstalling software or losing data. We focus on what actually matters for your digital life, not unnecessary replacements.</p>
@@ -53,5 +53,37 @@
                         </div>
                   </div>
             </div>
+      </div>
+</section>
+
+<section class="section d-lg-none d-block">
+      <div class="container">
+
+            <div class="text-center" data-aos="fade-up">
+                  <h6 class="fw-medium mb-0 text-uppercase"><span>Certified & Trusted</span></h6>
+                  <h2 data-aos="fade-up" data-aos-delay="40">Servicing All Brands</h2>
+            </div>
+            <div class="brands" data-aos-stagger="70">
+                  <div class="box" data-aos="scale-in">
+                        <img src="images/icons/m1.png" alt="brand">
+                  </div>
+                  <div class="box" data-aos="scale-in">
+                        <img src="images/icons/m2.png" alt="brand">
+                  </div>
+                  <div class="box" data-aos="scale-in">
+                        <img src="images/icons/m3.png" alt="brand">
+                  </div>
+                  <div class="box" data-aos="scale-in">
+                        <img src="images/icons/m6.png" alt="brand">
+                  </div>
+                  <div class="box" data-aos="scale-in">
+                        <img src="images/icons/m4.png" alt="brand">
+                  </div>
+                  <div class="box" data-aos="scale-in">
+                        <img src="images/icons/m5.png" alt="brand">
+                  </div>
+                 
+            </div>
+
       </div>
 </section>

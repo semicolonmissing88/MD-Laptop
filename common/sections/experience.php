@@ -1,4 +1,4 @@
-<section class="section bg">
+<section class="section bg d-lg-block d-none">
       <div class="container">
             <h2 data-aos="fade-up">25+ Years of Proven Experience <span>Across New Jersey</span></h2>
             <ul class="list-styled mb-2" data-aos="fade-up" data-aos-delay="40">
@@ -70,5 +70,24 @@
                         </div>
                   </div>
             </div>
+      </div>
+</section>
+
+<section class="section d-lg-none d-block" style="background-color: rgba(22, 22, 22, 1);">
+      <div class="container">
+           <ul class="stats" data-aos-stagger="90">
+            <li data-aos="fade-up">
+                  <h2 class="mb-1">1,999</h2>
+                  <p>Founded</p>
+            </li>
+            <li data-aos="fade-up">
+                  <h2 class="mb-1">100K+</h2>
+                  <p>Repairs Done</p>
+            </li>
+            <li data-aos="fade-up">
+                  <h2 class="mb-1">4.7★</h2>
+                  <p>Google Rating</p>
+            </li>
+           </ul>
       </div>
 </section>
