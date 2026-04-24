@@ -12413,6 +12413,11 @@ footer .footer-link .footer-link__toggle:after {
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   text-decoration: none;
 }
+@media (min-width: 993px) {
+  footer .footer-link .footer-link__toggle:after {
+    display: none;
+  }
+}
 footer .footer-link > li.footer-link__group.is-open .footer-link__toggle:after {
   transform: rotate(180deg);
 }
