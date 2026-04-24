@@ -14,7 +14,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-laptop-repair">
                               <span class="footer-link__toggle-label">Laptop Repair</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-laptop-repair" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-laptop-repair" inert aria-hidden="true">
                               <li><a href="#">Laptop Water Damage Repair</a></li>
                               <li><a href="#">Laptop Screen Repair</a></li>
                               <li><a href="#">Laptop Battery Replacement</a></li>
@@ -30,7 +30,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-macbook-repair">
                               <span class="footer-link__toggle-label">Macbook Repair</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-macbook-repair" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-macbook-repair" inert aria-hidden="true">
                               <li><a href="#">Macbook Repair</a></li>
                               <li><a href="#">Macbook Screen Repair</a></li>
                               <li><a href="#">Macbook Battery Replacement</a></li>
@@ -42,7 +42,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-mac-repair">
                               <span class="footer-link__toggle-label">Mac Repair</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-mac-repair" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-mac-repair" inert aria-hidden="true">
                               <li><a href="#">Mac Repair</a></li>
                               <li><a href="#">Mac Pro Repair</a></li>
                               <li><a href="#">iMac Repair</a></li>
@@ -53,7 +53,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-macbook-air-repair">
                               <span class="footer-link__toggle-label">Macbook Air Repair</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-macbook-air-repair" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-macbook-air-repair" inert aria-hidden="true">
                               <li><a href="#">Macbook Air Repair</a></li>
                               <li><a href="#">Macbook Air Screen Repair</a></li>
                               <li><a href="#">Macbook Air Keyboard</a></li>
@@ -67,7 +67,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-macbook-pro-repair">
                               <span class="footer-link__toggle-label">Macbook Pro Repair</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-macbook-pro-repair" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-macbook-pro-repair" inert aria-hidden="true">
                               <li><a href="#">Macbook Pro Repair</a></li>
                               <li><a href="#">MacBook Pro Trackpad Repair</a></li>
                               <li><a href="#">MacBook Pro Logic Board Repair</a></li>
@@ -81,7 +81,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-phones-repair">
                               <span class="footer-link__toggle-label">Phones Repair</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-phones-repair" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-phones-repair" inert aria-hidden="true">
                               <li><a href="#">iPhone X Repair</a></li>
                               <li><a href="#">iPhone XR Repair</a></li>
                               <li><a href="#">iPhone 11 Repair</a></li>
@@ -104,7 +104,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-ipad-repair">
                               <span class="footer-link__toggle-label">iPad Repair</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-ipad-repair" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-ipad-repair" inert aria-hidden="true">
                               <li><a href="#">iPad Mini</a></li>
                               <li><a href="#">iPad Air</a></li>
                               <li><a href="#">iPad Pro</a></li>
@@ -115,7 +115,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-other-devices">
                               <span class="footer-link__toggle-label">Other Devices</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-other-devices" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-other-devices" inert aria-hidden="true">
                               <li><a href="#">iPad Screen Replacement</a></li>
                               <li><a href="#">Apple Watch Repair</a></li>
                               <li><a href="#">Microsoft Surface Repair</a></li>
@@ -137,7 +137,7 @@
                         <button type="button" class="footer-link__toggle js-footer-link-toggle" aria-expanded="false" aria-controls="footer-sub-important-links">
                               <span class="footer-link__toggle-label">Important Links</span>
                         </button>
-                        <ul class="footer-link__sub" id="footer-sub-important-links" hidden>
+                        <ul class="footer-link__sub" id="footer-sub-important-links" inert aria-hidden="true">
                               <li><a href="#">Press</a></li>
                               <li><a href="#">Blog</a></li>
                               <li><a href="#">Onsite Service</a></li>

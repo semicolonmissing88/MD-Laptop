@@ -26,12 +26,14 @@
                               <a href="#" class="btn btn-primary icon w-100" data-aos="slam-in" data-aos-delay="120"> <img src="images/icons/file.svg" alt="">Get Free Quote</a>
                               <a href="#" class="btn btn-primary white icon" data-aos="slam-in" data-aos-delay="120"> <img src="images/icons/phone.svg" alt=""></a>
                         </div>
-                        <h6 class="mb-0">
-                              <a href="#" class="link-btn text-red js-final-cta-more-toggle" role="button" aria-expanded="false" aria-controls="final-cta-more-text">More about our services</a>
-                        </h6>
-                        <div class="final-cta-more text-start mt-3" id="final-cta-more-text" hidden>
-                              <p class="text-muted mb-0">When your laptop shows trouble—flickering, battery not holding charge, or slow performance—visit LaptopMD+ serving Morristown NJ, Passaic and Morris County for walk-in and on-site repair solutions from display service to battery replacement and operating system troubleshooting, backed by our 30-day guarantee. Our trusted experts handle Apple, PC, and Windows machines using professional tools. We diagnose and repair laptops and PCs using advanced tools to identify performance issues, storage failures, faulty RAM, graphics problems, power issues, and software errors. For Apple devices, Apple-certified work uses genuine Apple parts. We service Apple hardware, Windows computers, and PC desktops at our store locations.</p>
-                        </div>
+                        <div class="final-cta-accordion js-final-cta-accordion">
+                              <h6 class="mb-0">
+                                    <a href="#" class="link-btn text-red js-final-cta-more-toggle" role="button" aria-expanded="false" aria-controls="final-cta-more-text">More about our services</a>
+                              </h6>
+                              <div class="final-cta-more text-start" id="final-cta-more-text" inert aria-hidden="true">
+                                    <p class="text-muted mb-0">When your laptop shows trouble—flickering, battery not holding charge, or slow performance—visit LaptopMD+ serving Morristown NJ, Passaic and Morris County for walk-in and on-site repair solutions from display service to battery replacement and operating system troubleshooting, backed by our 30-day guarantee. Our trusted experts handle Apple, PC, and Windows machines using professional tools. We diagnose and repair laptops and PCs using advanced tools to identify performance issues, storage failures, faulty RAM, graphics problems, power issues, and software errors. For Apple devices, Apple-certified work uses genuine Apple parts. We service Apple hardware, Windows computers, and PC desktops at our store locations.</p>
+                              </div>
+                        <!-- </div> -->
                   </div>
             </div>
       </div>

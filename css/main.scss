@@ -186,6 +186,67 @@ button {
                   transform: translateX(5px);
             }
       }
+
+      &.js-final-cta-more-toggle {
+            &:after {
+                  content: "\f078";
+                  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            &[aria-expanded="true"]:after {
+                  transform: rotate(180deg);
+            }
+
+            &:hover {
+                  &:after {
+                        transform: translateX(0);
+                  }
+            }
+
+            &[aria-expanded="true"]:hover:after {
+                  transform: rotate(180deg);
+            }
+      }
+}
+
+.final-cta-accordion {
+      display: grid;
+      grid-template-rows: auto 0fr;
+      transition: grid-template-rows 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+      width: 100%;
+      justify-items: center;
+
+      &.is-open {
+            grid-template-rows: auto 1fr;
+      }
+}
+
+.final-cta-more {
+      overflow: hidden;
+      min-height: 0;
+      width: 100%;
+      max-width: 100%;
+      opacity: 0;
+      transition: opacity 0.28s ease, margin-top 0.28s ease;
+      margin-top: 0;
+      justify-self: stretch;
+}
+
+.final-cta-accordion.is-open .final-cta-more {
+      opacity: 1;
+      margin-top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+      .final-cta-accordion,
+      .final-cta-more,
+      .link-btn.js-final-cta-more-toggle:after,
+      footer .footer-link__group,
+      footer .footer-link__sub,
+      footer .footer-link__toggle:after {
+            transition: none !important;
+      }
 }
 
 .badge {
@@ -870,7 +931,7 @@ footer {
 
             }
 
-            >li {
+            >li:not(.footer-link__group) {
                   a {
                         font-size: 16px;
                         font-weight: 600;
@@ -890,20 +951,26 @@ footer {
                               font-size: inherit;
                               display: inline-block;
                               margin-left: 8px;
-                              transition: transform 0.3s ease;
+                              transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
                         }
                   }
             }
 
             >li.footer-link__group {
-                  @include media("<tablet-x") {
-                        flex-direction: column;
-                        align-items: stretch;
-                        justify-content: flex-start;
+                  display: grid;
+                  grid-template-rows: auto 0fr;
+                  align-items: start;
+                  width: 100%;
+                  transition: grid-template-rows 0.38s cubic-bezier(0.22, 1, 0.36, 1);
 
-                        &:after {
-                              content: none;
-                        }
+                  &.is-open {
+                        grid-template-rows: auto 1fr;
+                  }
+
+                  a {
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-decoration: underline;
                   }
             }
 
@@ -918,46 +985,45 @@ footer {
                   padding: 0;
                   text-align: left;
                   font-family: inherit;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  width: 100%;
+                  gap: 8px;
 
                   .footer-link__toggle-label {
                         text-decoration: underline;
                   }
 
-                  @include media("<tablet-x") {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        width: 100%;
-                        gap: 8px;
-
-                        &:after {
-                              content: "\f078";
-                              font-family: "Font Awesome 6 Free";
-                              font-weight: 900;
-                              font-size: inherit;
-                              flex-shrink: 0;
-                              transition: transform 0.3s ease;
-                              text-decoration: none;
-                        }
+                  &:after {
+                        content: "\f078";
+                        font-family: "Font Awesome 6 Free";
+                        font-weight: 900;
+                        font-size: inherit;
+                        flex-shrink: 0;
+                        transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+                        text-decoration: none;
                   }
             }
 
             >li.footer-link__group.is-open .footer-link__toggle {
-                  @include media("<tablet-x") {
-                        &:after {
-                              transform: rotate(180deg);
-                        }
+                  &:after {
+                        transform: rotate(180deg);
                   }
             }
 
             .footer-link__sub {
                   list-style: none;
-                  margin: 12px 0 0;
+                  margin: 0;
                   padding: 0;
                   display: flex;
                   flex-direction: column;
                   gap: 10px;
                   width: 100%;
+                  overflow: hidden;
+                  min-height: 0;
+                  opacity: 0;
+                  transition: opacity 0.28s ease, margin-top 0.28s ease;
 
                   li {
                         display: block;
@@ -969,6 +1035,11 @@ footer {
                               text-decoration: underline;
                         }
                   }
+            }
+
+            >li.footer-link__group.is-open .footer-link__sub {
+                  opacity: 1;
+                  margin-top: 12px;
             }
 
             >li:nth-child(4n + 3),
