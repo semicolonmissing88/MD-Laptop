@@ -12404,9 +12404,6 @@ footer .footer-link .footer-link__toggle {
   width: 100%;
   gap: 8px;
 }
-footer .footer-link .footer-link__toggle .footer-link__toggle-label {
-  text-decoration: underline;
-}
 footer .footer-link .footer-link__toggle:after {
   content: "\f078";
   font-family: "Font Awesome 6 Free";
