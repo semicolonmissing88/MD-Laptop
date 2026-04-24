@@ -34,12 +34,15 @@
 
 <section class="section d-lg-none d-block">
       <div class="container">
-            <div class="banner-sponsors js-banner-sponsors section-slider" data-aos="fade-up" data-aos-stagger="70">
+            <div class="banner-sponsors js-banner-sponsors section-slider mb-2" data-aos="fade-up" data-aos-stagger="70">
                   <img src="images/icons/i1.svg" alt="icon">
                   <img src="images/icons/i2.svg" alt="icon">
                   <img src="images/icons/i3.svg" alt="icon">
                   <img src="images/icons/i4.svg" alt="icon">
                   <img src="images/icons/i5.svg" alt="icon">
+            </div>
+            <div class="text-center">
+                  <a href="#" class="btn btn-primary white">Check our media</a>
             </div>
       </div>
 </section>

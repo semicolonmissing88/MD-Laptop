@@ -35,7 +35,7 @@
 
                         <div class="search-box">
                               <input type="text" placeholder="Search for your device">
-                              <button type="submit"><img src="images/icons/search.svg" alt=""></button>
+                              <button type="submit"><img src="images/icons/search2.svg" alt=""></button>
                         </div>
 
                         <div class="d-lg-none d-flex gap-sm-3 gap-2 mb-5">

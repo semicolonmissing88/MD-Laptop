@@ -457,7 +457,7 @@ header {
             inset: 0;
             z-index: 0;
             pointer-events: none;
-            background: linear-gradient(90deg, #1C1C1C 0%, rgba(28, 28, 28, 0) 100%);
+            background: linear-gradient(90deg, #1C1C1C 0%, rgb(28 28 28 / 57%) 100%);
       }
 
       @include media("<phone") {
@@ -870,7 +870,7 @@ footer {
 
             }
 
-            li {
+            >li {
                   a {
                         font-size: 16px;
                         font-weight: 600;
@@ -895,8 +895,84 @@ footer {
                   }
             }
 
-            li:nth-child(4n + 3),
-            li:nth-child(4n + 4) {
+            >li.footer-link__group {
+                  @include media("<tablet-x") {
+                        flex-direction: column;
+                        align-items: stretch;
+                        justify-content: flex-start;
+
+                        &:after {
+                              content: none;
+                        }
+                  }
+            }
+
+            .footer-link__toggle {
+                  font-size: 16px;
+                  font-weight: 600;
+                  text-decoration: none;
+                  background: none;
+                  border: 0;
+                  color: inherit;
+                  cursor: pointer;
+                  padding: 0;
+                  text-align: left;
+                  font-family: inherit;
+
+                  .footer-link__toggle-label {
+                        text-decoration: underline;
+                  }
+
+                  @include media("<tablet-x") {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        gap: 8px;
+
+                        &:after {
+                              content: "\f078";
+                              font-family: "Font Awesome 6 Free";
+                              font-weight: 900;
+                              font-size: inherit;
+                              flex-shrink: 0;
+                              transition: transform 0.3s ease;
+                              text-decoration: none;
+                        }
+                  }
+            }
+
+            >li.footer-link__group.is-open .footer-link__toggle {
+                  @include media("<tablet-x") {
+                        &:after {
+                              transform: rotate(180deg);
+                        }
+                  }
+            }
+
+            .footer-link__sub {
+                  list-style: none;
+                  margin: 12px 0 0;
+                  padding: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  width: 100%;
+
+                  li {
+                        display: block;
+                        width: 100%;
+
+                        a {
+                              font-size: 14px;
+                              font-weight: 500;
+                              text-decoration: underline;
+                        }
+                  }
+            }
+
+            >li:nth-child(4n + 3),
+            >li:nth-child(4n + 4) {
                   justify-self: end;
 
                   @include media("<tablet-x") {

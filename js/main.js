@@ -104,6 +104,47 @@
     else mq.addListener(onChange);
     onChange();
   }
+
+  function initFinalCtaMoreToggle() {
+    var link = document.querySelector('.js-final-cta-more-toggle');
+    var panel = document.getElementById('final-cta-more-text');
+    if (!link || !panel) return;
+
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var open = panel.hasAttribute('hidden');
+      if (open) {
+        panel.removeAttribute('hidden');
+        link.setAttribute('aria-expanded', 'true');
+      } else {
+        panel.setAttribute('hidden', '');
+        link.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  function initFooterLinkToggles() {
+    document.querySelectorAll('.js-footer-link-toggle').forEach(function (btn) {
+      var id = btn.getAttribute('aria-controls');
+      var panel = id ? document.getElementById(id) : null;
+      var group = btn.closest('.footer-link__group');
+      if (!panel || !group) return;
+
+      btn.addEventListener('click', function () {
+        var open = panel.hasAttribute('hidden');
+        if (open) {
+          panel.removeAttribute('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+          group.classList.add('is-open');
+        } else {
+          panel.setAttribute('hidden', '');
+          btn.setAttribute('aria-expanded', 'false');
+          group.classList.remove('is-open');
+        }
+      });
+    });
+  }
+
   // Save scroll for unload + bfcache navigations.
   window.addEventListener('pagehide', persistScroll, { passive: true });
   window.addEventListener('beforeunload', persistScroll);
@@ -114,11 +155,15 @@
       restoreScroll();
       initScrollTop();
       initNavToggle();
+      initFinalCtaMoreToggle();
+      initFooterLinkToggles();
     });
   } else {
     restoreScroll();
     initScrollTop();
     initNavToggle();
+    initFinalCtaMoreToggle();
+    initFooterLinkToggles();
   }
 
   window.addEventListener('load', hideLoaderSoon, { once: true });
