@@ -3,7 +3,7 @@
             <div class="text-center mb-5">
                   <h2 data-aos="fade-up">Warranty Protection & <span>Support</span></h2>
                   <p data-aos="fade-up" data-aos-delay="40">We provide continued support after service is completed. We back every job with warranty coverage—if the same issue returns, we fix it at no extra charge. If your laptop is under warranty, many services can be performed at no additional cost. Schedule a no-cost diagnostic checkup. Check repair status online by entering service order number and email or serial number.</p>
-                  <a href="#" class="btn btn-primary icon" data-aos="fade-up" data-aos-delay="70"><img src="images/icons/search.svg" alt="icon"> Check My Repair Status</a>
+                  <a href="#" class="btn btn-primary icon"><img src="images/icons/search.svg" alt="icon"> Check My Repair Status</a>
             </div>
             <h2 class="line-heading mb-5" data-aos="fade-up">Services Backed by Our Warranty</h2>
             <div class="services services-warranty">
