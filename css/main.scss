@@ -990,6 +990,9 @@ footer {
                   justify-content: space-between;
                   width: 100%;
                   gap: 8px;
+                  &:hover{
+                        color: $primary-color !important;
+                  }
 
                   &:after {
                         content: "\f078";
