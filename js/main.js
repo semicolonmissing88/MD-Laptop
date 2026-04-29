@@ -74,24 +74,39 @@
 
   function initNavToggle() {
     var btn = document.querySelector('.js-nav-toggle');
-    var nav = document.getElementById('nav');
-    if (!btn || !nav) return;
+    var overlay = document.querySelector('.js-nav-overlay');
+    var closeBtn = document.querySelector('.js-nav-close');
+    var mobileNav = document.getElementById('mobileNav');
+    if (!btn || !mobileNav) return;
 
     function setOpen(open) {
       document.body.classList.toggle('nav-open', !!open);
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
       btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      mobileNav.setAttribute('aria-hidden', open ? 'false' : 'true');
     }
 
     btn.addEventListener('click', function () {
       setOpen(!document.body.classList.contains('nav-open'));
     });
 
+    if (overlay) {
+      overlay.addEventListener('click', function () {
+        setOpen(false);
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        setOpen(false);
+      });
+    }
+
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') setOpen(false);
     });
 
-    nav.addEventListener('click', function (e) {
+    mobileNav.addEventListener('click', function (e) {
       var a = e.target && e.target.closest ? e.target.closest('a') : null;
       if (a) setOpen(false);
     });
@@ -103,6 +118,29 @@
     if (mq.addEventListener) mq.addEventListener('change', onChange);
     else mq.addListener(onChange);
     onChange();
+  }
+
+  function initMobileNavGroups() {
+    var root = document.getElementById('mobileNav');
+    if (!root) return;
+    root.querySelectorAll('.js-mn-group-header').forEach(function (btn) {
+      var group = btn.closest('.mn-group');
+      var body = group ? group.querySelector('.mn-group-body') : null;
+      if (!group || !body) return;
+
+      btn.addEventListener('click', function () {
+        var open = !group.classList.contains('open');
+        group.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) {
+          body.removeAttribute('inert');
+          body.setAttribute('aria-hidden', 'false');
+        } else {
+          body.setAttribute('inert', '');
+          body.setAttribute('aria-hidden', 'true');
+        }
+      });
+    });
   }
 
   function initFinalCtaMoreToggle() {
@@ -162,6 +200,7 @@
       restoreScroll();
       initScrollTop();
       initNavToggle();
+      initMobileNavGroups();
       initFinalCtaMoreToggle();
       initFooterLinkToggles();
     });
@@ -169,6 +208,7 @@
     restoreScroll();
     initScrollTop();
     initNavToggle();
+    initMobileNavGroups();
     initFinalCtaMoreToggle();
     initFooterLinkToggles();
   }

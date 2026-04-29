@@ -27,8 +27,13 @@
 <section class="section d-lg-none d-block pb-0">
       <div class="container">
             <h2 class="text-center mb-4" data-aos="fade-up">See How We Fix Your Laptop</h2>
-            <div class="imgBox mb-4" data-aos="fade-right">
-                  <img src="images/dummy.png" alt="laptop">
+            <div class="imgBox fe-video">
+                  <img src="images/dummy.png" alt="Video testimonial">
+                  <div class="fe-video-play">
+                        <svg viewBox="0 0 24 24">
+                              <polygon points="5,3 19,12 5,21" />
+                        </svg>
+                  </div>
             </div>
             <h2 data-aos="flip-soft">No Fees. <span>Free</span> Estimate. While you Wait.</h2>
             <p data-aos="fade-up" data-aos-delay="40">You only pay when we fix it. Walk in anytime — no appointment needed.</p>

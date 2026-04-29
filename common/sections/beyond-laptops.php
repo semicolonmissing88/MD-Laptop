@@ -10,11 +10,11 @@
                               </div>
                               <ul class="list-styled red">
                                     <li>
-                                          <h6>Consoles:</h6>
+                                          <h6><a href="#">Consoles:</a></h6>
                                           <p>Xbox Series X/S, PlayStation 5, Nintendo Switch.</p>
                                     </li>
                                     <li>
-                                          <h6>Components:</h6>
+                                          <h6><a href="#">Components:</a></h6>
                                           <p class="mb-0">Video Cards (GPU) repair, HDMI port replacement.</p>
                                     </li>
                               </ul>
@@ -28,11 +28,11 @@
                               </div>
                               <ul class="list-styled red">
                                     <li>
-                                          <h6>Phones:</h6>
+                                          <h6><a href="#">Phones:</a></h6>
                                           <p>iPhone (all models), Samsung Galaxy, Google Pixel.</p>
                                     </li>
                                     <li>
-                                          <h6>Tablets:</h6>
+                                          <h6><a href="#">Tablets:</a></h6>
                                           <p class="mb-0">iPad Pro, Air, & Mini repairs.</p>
                                     </li>
                               </ul>
@@ -46,11 +46,11 @@
                               </div>
                               <ul class="list-styled red">
                                     <li>
-                                          <h6>Drones:</h6>
+                                          <h6><a href="#">Drones:</a></h6>
                                           <p>DJI Mavic, Mini, Air & Phantom series.</p>
                                     </li>
                                     <li>
-                                          <h6>Services:</h6>
+                                          <h6><a href="#">Services:</a></h6>
                                           <p class="mb-0">Gimbal calibration, motor replacement, crash recovery.</p>
                                     </li>
                               </ul>
@@ -64,11 +64,11 @@
                               </div>
                               <ul class="list-styled red">
                                     <li>
-                                          <h6>Legacy Gear:</h6>
+                                          <h6><a href="#">Legacy Gear:</a></h6>
                                           <p>Vintage amplifiers, receivers, and turntables.</p>
                                     </li>
                                     <li>
-                                          <h6>35+ years:</h6>
+                                          <h6><a href="#">35+ years:</a></h6>
                                           <p class="mb-0">of electronics experience.</p>
                                     </li>
                               </ul>
@@ -78,15 +78,15 @@
             <div class="box mb-5" data-aos="fade-up">
                   <h4>Other Devices We Repair</h4>
                   <div class="badge-list">
-                        <div class="badge dark">Xbox</div>
-                        <div class="badge dark">smartphone</div>
-                        <div class="badge dark">iPhone</div>
-                        <div class="badge dark">Samsung smartphone</div>
-                        <div class="badge dark">Video Card</div>
-                        <div class="badge dark">Google Pixel</div>
-                        <div class="badge dark">Nintendo Switch</div>
-                        <div class="badge dark">Drone</div>
-                        <div class="badge dark">Vintage Audio</div>
+                        <div class="badge dark"><a href="#">Xbox</a></div>
+                        <div class="badge dark"><a href="#">smartphone</a></div>
+                        <div class="badge dark"><a href="#">iPhone</a></div>
+                        <div class="badge dark"><a href="#">Samsung smartphone</a></div>
+                        <div class="badge dark"><a href="#">Video Card</a></div>
+                        <div class="badge dark"><a href="#">Google Pixel</a></div>
+                        <div class="badge dark"><a href="#">Nintendo Switch</a></div>
+                        <div class="badge dark"><a href="#">Drone</a></div>
+                        <div class="badge dark"><a href="#">Vintage Audio</a></div>
                   </div>
             </div>
             <div class="box red-box bg-red" data-aos="fade-up">

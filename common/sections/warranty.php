@@ -14,6 +14,7 @@
                                     <h6 class="mb-3">Laptop Screen Replacement</h6>
                                     <p class="mb-2 text-light">Fix cracked, flickering, or dead displays from $89–$149+. Your gateway to productivity—same-day service with 30-day guarantee.</p>
                                     <p class="text-red mb-0"><b>$89—$149+</b></p>
+                                    <a href="#" class="btn-link arrow-btn d-block">Learn more</a>
                               </div>
                         </div>
                         <div class="services-warranty-slide">
@@ -23,6 +24,7 @@
                                     <p class="mb-2 text-light">Replace worn, swollen, or fast draining batteries under 80% capacity*.</p>
                                     <p class="text-red mb-0"><b>Often No Cost Under Warranty*</b></p>
                                     <small>Safety-first swaps with 30-day guarantee.</small>
+                                    <a href="#" class="btn-link arrow-btn d-block">Learn more</a>
                               </div>
                         </div>
                         <div class="services-warranty-slide">
@@ -31,6 +33,7 @@
                                     <h6 class="mb-3">Operating System Troubleshooting</h6>
                                     <p class="mb-2 text-light">Resolve boot failures, crashes, or corrupted software. Free diagnostics determine hardware vs. software—warranty often covers fixes.</p>
                                     <p class="text-red mb-0"><b>Covered Under Warranty</b></p>
+                                    <a href="#" class="btn-link arrow-btn d-block">Learn more</a>
                               </div>
                         </div>
                         <div class="services-warranty-slide">
@@ -39,6 +42,7 @@
                                     <h6 class="mb-3">Laptop Screen Replacement</h6>
                                     <p class="mb-2 text-light">Fix cracked, flickering, or dead displays from $89–$149+. Your gateway to productivity—same-day service with 30-day guarantee.</p>
                                     <p class="text-red mb-0"><b>$89—$149+</b></p>
+                                    <a href="#" class="btn-link arrow-btn d-block">Learn more</a>
                               </div>
                         </div>
                   </div>
@@ -60,6 +64,7 @@
                                     <img class="mb-2" src="images/icons/w1.svg" alt="icon">
                                     <h6 class="mb-2">Screen Repair</h6>
                                     <p class="mb-0 text-muted">Cracked or dead pixels</p>
+                                    <a href="#" class="text-light link-btn arrow-btn">Learn more</a>
                               </div>
                         </div>
                         <div class="services-warranty-slide">
@@ -67,6 +72,7 @@
                                     <img class="mb-2" src="images/icons/w2.svg" alt="icon">
                                     <h6 class="mb-2">Battery</h6>
                                     <p class="mb-0 text-muted">Won't hold charge</p>
+                                    <a href="#" class="text-light link-btn arrow-btn">Learn more</a>
                               </div>
                         </div>
                         <div class="services-warranty-slide">
@@ -74,6 +80,7 @@
                                     <img class="mb-2" src="images/icons/w3.svg" alt="icon">
                                     <h6 class="mb-2">Keyboard</h6>
                                     <p class="mb-0 text-muted">Stuck or missing keys</p>
+                                    <a href="#" class="text-light link-btn arrow-btn">Learn more</a>
                               </div>
                         </div>
                   
